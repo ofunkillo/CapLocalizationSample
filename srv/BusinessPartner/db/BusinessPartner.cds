@@ -14,3 +14,4 @@ entity BusinessPartners : cuid, managed {
 }
 
 @readonly entity Divisions as projection on MD.Divisions;
+@readonly entity Divisions.texts as projection on MD.Divisions.texts;

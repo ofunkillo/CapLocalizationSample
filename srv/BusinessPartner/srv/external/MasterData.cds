@@ -17,3 +17,6 @@ entity MasterData.Divisions {
 
 @cds.external : true
 service MasterData {};
+
+
+annotate MasterData.Divisions.texts with @cds.autoexpose: true;

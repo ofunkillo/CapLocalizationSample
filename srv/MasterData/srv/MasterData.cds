@@ -4,5 +4,5 @@ using {MasterDataDb as MD} from '../db/MasterData';
 
 service MasterData {
     entity Divisions as select from MD.Divisions;
-    entity Divisions_texts as projection on MD.Divisions.texts;
+    entity texts as projection on MD.Divisions.texts;
 }

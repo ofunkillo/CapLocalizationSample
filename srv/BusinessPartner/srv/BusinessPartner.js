@@ -10,4 +10,11 @@ module.exports = cds.service.impl(async function businessPartnerService() {
     // Execute the query
     return md.run(req.query);
   });
+  this.on('READ', 'Divisions_texts', async (req) => {
+    
+    // Instance the external service
+    const md = await cds.connect.to('MasterData');
+    // Execute the query
+    return md.run(req.query);
+  });
 });

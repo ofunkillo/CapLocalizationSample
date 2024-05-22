@@ -6,4 +6,5 @@ namespace MasterDataDb;
 
 entity Divisions : CodeList {
   key division : String(20);
+  descr: localized String(100);
 }
