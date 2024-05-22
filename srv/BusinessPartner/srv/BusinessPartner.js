@@ -6,7 +6,14 @@ module.exports = cds.service.impl(async function businessPartnerService() {
   this.on('READ', 'Divisions', async (req) => {
     
     // Instance the external service
-    const md = await cds.connect.to('MasterData');    
+    const md = await cds.connect.to('MasterData');
+    // Execute the query
+    return md.run(req.query);
+  });
+  this.on('READ', 'Divisions_texts', async (req) => {
+    
+    // Instance the external service
+    const md = await cds.connect.to('MasterData');
     // Execute the query
     return md.run(req.query);
   });
