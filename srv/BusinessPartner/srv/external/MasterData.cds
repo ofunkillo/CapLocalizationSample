@@ -17,4 +17,3 @@ entity MasterData.Divisions {
 
 @cds.external : true
 service MasterData {};
-
